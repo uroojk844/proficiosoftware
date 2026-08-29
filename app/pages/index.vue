@@ -4,6 +4,9 @@
       <LandingPage />
     </MaxContainer>
     <InfiniteScroll />
+    <MaxContainer class="py-16">
+      <Work />
+    </MaxContainer>
   </main>
 </template>
 

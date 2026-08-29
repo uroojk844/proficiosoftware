@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <section :class="border ? `border-${border}` : ''">
+  <section :class="border ? `border-${border}` : 'border-black'">
     <div class="mx-auto max-w-350 w-full max-[1400px]:px-6">
       <slot />
     </div>

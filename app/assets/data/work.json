@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "company": "TASQ Consulting",
+        "title": "Digital Presencec reimagine",
+        "description": "End-to-end redesign of Tasq Consulting's digital presence — strategy, UX, and development. Resulted in a 340% increase in qualified leads within 90 days of launch.",
+        "category": "corporate website",
+        "link":"http://tasqconsulting.com",
+        "image": "/work/tasqconsulting.png",
+        "tags": ["UX Desingn", "nuxt", "seo", "animation"]
+    },
+    {
+        "id":2,
+        "company": "TASQ Consulting",
+        "title": "Digital Presencec reimagine",
+        "description": "End-to-end redesign of Tasq Consulting's digital presence — strategy, UX, and development. Resulted in a 340% increase in qualified leads within 90 days of launch.",
+        "category": "corporate website",
+        "link":"http://tasqconsulting.com",
+        "image": "/work/tasqconsulting.png",
+        "tags": ["UX Desingn", "nuxt", "seo", "animation"]
+    },
+    {
+        "id":3,
+        "company": "TASQ Consulting",
+        "title": "Digital Presencec reimagine",
+        "description": "End-to-end redesign of Tasq Consulting's digital presence — strategy, UX, and development. Resulted in a 340% increase in qualified leads within 90 days of launch.",
+        "category": "corporate website",
+        "link":"http://tasqconsulting.com",
+        "image": "/work/tasqconsulting.png",
+        "tags": ["UX Desingn", "nuxt", "seo", "animation"]
+    },
+    {
+        "id":4,
+        "company": "TASQ Consulting",
+        "title": "Digital Presencec reimagine",
+        "description": "End-to-end redesign of Tasq Consulting's digital presence — strategy, UX, and development. Resulted in a 340% increase in qualified leads within 90 days of launch.",
+        "category": "corporate website",
+        "link":"http://tasqconsulting.com",
+        "image": "/work/tasqconsulting.png",
+        "tags": ["UX Desingn", "nuxt", "seo", "animation"]
+    },
+    {
+        "id":5,
+        "company": "TASQ Consulting",
+        "title": "Digital Presencec reimagine",
+        "description": "End-to-end redesign of Tasq Consulting's digital presence — strategy, UX, and development. Resulted in a 340% increase in qualified leads within 90 days of launch.",
+        "category": "corporate website",
+        "link":"http://tasqconsulting.com",
+        "image": "/work/tasqconsulting.png",
+        "tags": ["UX Desingn", "nuxt", "seo", "animation2"]
+    }
+]

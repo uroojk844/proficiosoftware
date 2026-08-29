@@ -20,7 +20,7 @@ function toggleNav() {
 }
 
 const scrollY = ref(0);
-const scrollToggleLimit = 100;
+const scrollToggleLimit = 50;
 
 onMounted(() => {
   document.addEventListener("scroll", () => {
@@ -33,9 +33,11 @@ onMounted(() => {
 
 <template>
   <MaxContainer
-    class="sticky top-0 z-50 border-l-8 border-primary"
+    class="sticky top-0 z-50 border-l-8 border-l-primary"
     v-bind="scrollY > scrollToggleLimit ? { border: 'b' } : {}"
-    :class="{ 'bg-white border-transparent': scrollY > scrollToggleLimit }"
+    :class="{
+      'bg-white border-l-transparent': scrollY > scrollToggleLimit,
+    }"
   >
     <nav class="group [[open]]:h-dvh" v-bind="isOpen ? { open: true } : {}">
       <div class="flex items-center justify-between">

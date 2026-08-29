@@ -10,5 +10,37 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  app: {
+    head: {
+      meta: [
+        {
+          name: "theme-color",
+          content: "#fff",
+        },
+        {
+          name: "mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "application-name",
+          content: "Proficio Software Solution",
+        },
+        {
+          name: "description",
+          content: "",
+        },
+        {
+          name: "creator",
+          content: "uroojk844",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+      ],
+      title: "Proficio Software Solution",
+    },
+  },
+
   modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "@nuxt/image"],
 });
