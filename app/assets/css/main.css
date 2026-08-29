@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 1pxs;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+  }
+
+  &:has(nav:is([open])) {
+    overflow: hidden;
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+@theme {
+  --color-primary: #ffe600;
+  --color-white-dim: #f2f2f2;
+  --color-black: #0a0a0a;
+
+  --color-light-gray: #e0e0e0;
+  --color-text-gray: #555555;
+  --color-desc-gray: #999999;
+}
+
+@utility font-mono {
+  font-family: "Space Mono", monospace;
+}
+
+@utility font-body {
+  font-family: "Work Sans", system-ui, sans-serif;
+}
