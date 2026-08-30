@@ -15,7 +15,10 @@ defineProps<{
       <small class="whitespace-nowrap"
         >{{ position.toString().padStart(2, "0") }} /</small
       >
-      <span class="text-5xl font-bold text-black" :class="titleClass">
+      <span
+        class="text-3xl sm:text-5xl font-bold text-black"
+        :class="titleClass"
+      >
         {{ title }}
       </span>
     </div>

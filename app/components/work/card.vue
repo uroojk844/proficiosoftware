@@ -16,12 +16,13 @@ defineProps<{
 </script>
 
 <template>
-  <article class="grid content-start border-b-2 border-r-2 p-4 h-full">
+  <article class="group grid content-start border-b-2 border-r-2 p-4 h-full">
     <figure class="relative overflow-hidden mb-3">
-      <img
-        src="/work/tasqconsulting.png"
-        alt=""
-        class="transition duration-500 grayscale-100 hover:scale-105 hover:grayscale-0 aspect-video object-cover object-center h-full"
+      <NuxtImg
+        :src="work.image"
+        :alt="work.company"
+        loading="lazy"
+        class="transition duration-500 grayscale-100 group-hover:scale-105 group-hover:grayscale-0 aspect-video object-cover object-center w-full h-full"
       />
 
       <small
@@ -41,10 +42,15 @@ defineProps<{
         </p>
       </div>
 
-      <NuxtLink :href="work.link" target="_blank" class="link">
+      <NuxtLink
+        :href="work.link"
+        target="_blank"
+        class="link"
+        title="visit website"
+      >
         <AppButton
           variant="icon"
-          class="hover:rotate-45"
+          class="group-hover:rotate-45"
           icon-class="-rotate-45"
         />
       </NuxtLink>

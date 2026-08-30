@@ -16,6 +16,13 @@ onMounted(() => {
     });
   });
 });
+
+watch(
+  () => useRoute().fullPath,
+  () => {
+    isOpen.value = false;
+  },
+);
 </script>
 
 <template>

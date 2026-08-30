@@ -11,35 +11,31 @@ const { name = "", required = true } = defineProps<{
 </script>
 
 <template>
-  <div class="group grid gap-2">
-    <label
+  <section class="group grid gap-2">
+    <div
       class="text-desc-gray text-xs uppercase group-has-[input:required]:after:content-['_*'] after:text-red-600"
-      >{{ label }}</label
     >
+      {{ label }}
+    </div>
 
-    <div class="flex gap-4 flex-wrap">
-      <input
+    <ul class="flex gap-4 flex-wrap">
+      <li
         v-for="option in options"
         :key="option.value"
-        type="radio"
-        :value="option.value"
-        :data-label="option.label"
-        :name="name || label"
-        :required
-        class="radio"
-      />
-    </div>
-  </div>
+        class="relative border-2 px-3 py-1.5 hover:bg-primary border-black cursor-pointer has-[input:checked]:bg-primary has-[input:checked]:border-black"
+      >
+        <label :for="option.value">
+          {{ option.label }}
+        </label>
+        <input
+          :id="option.value"
+          type="radio"
+          :value="option.value"
+          :name="name || label"
+          :required
+          class="appearance-none absolute left-0 top-0 w-full h-full"
+        />
+      </li>
+    </ul>
+  </section>
 </template>
-
-<style scoped>
-@reference "~/assets/css/main.css";
-
-.radio {
-  @apply appearance-none border-2 border-desc-gray checked:border-black py-2 px-4 text-sm cursor-pointer transition-colors duration-300 hover:bg-primary hover:text-black checked:bg-primary text-black  outline-none focus:border-primary;
-
-  &::before {
-    content: attr(data-label);
-  }
-}
-</style>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+
+
 const details = [
   {
     label: "phone",
@@ -96,7 +98,7 @@ async function handleSubmit(event: SubmitEvent) {
 
   <AppHeader id="contact" :position="4" title="start a project" class="mb-16" />
 
-  <section class="grid sm:grid-cols-3 border-2">
+  <section class="grid sm:grid-cols-[min-content_1fr] border-2">
     <div class="bg-black px-6 sm:px-12 py-8 sm:py-16">
       <p class="text-white text-4xl font-bold mb-8">
         LET'S BUILD SOMETHING
@@ -123,7 +125,7 @@ async function handleSubmit(event: SubmitEvent) {
       </ul>
     </div>
     <form
-      class="sm:col-span-2 gap-4 grid content-start p-6 sm:p-8 sm:grid-cols-2"
+      class="gap-4 grid content-start p-6 sm:p-8 lg:grid-cols-2"
       @submit.prevent="handleSubmit"
     >
       <FormInput id="name" label="Name" placeholder="John Sharma" />
@@ -137,24 +139,24 @@ async function handleSubmit(event: SubmitEvent) {
         :required="false"
       />
 
-      <FormRadio :options="budgets" label="budget" class="sm:col-span-full" />
+      <FormRadio :options="budgets" label="budget" class="lg:col-span-full" />
 
       <FormCheckBox
         :required="false"
         :options="services"
         label="services"
-        class="sm:col-span-full"
+        class="lg:col-span-full"
       />
 
       <FormTextBox
         id="description"
         label="Project details"
         placeholder="Describe your project, goals, and timeline... "
-        class="sm:col-span-2"
+        class="lg:col-span-2"
       />
 
       <AppButton
-        class="sm:col-span-2 py-3"
+        class="lg:col-span-2 py-3"
         :icon="submitting ? 'svg-spinners:bars-fade' : undefined"
       >
         {{ submitting ? "Sending" : "Send message" }}
