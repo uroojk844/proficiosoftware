@@ -1,16 +1,22 @@
-<script setup lang="tsx">
+<script setup lang="ts">
 const {
   list = [
     "React",
-    "Analytics",
-    "webdesign",
-    "ecommerce",
-    "React",
-    "Analytics",
-    "webdesign",
-    "ecommerce",
+    "Vue & Nuxt",
+    "Flutter",
+    "Mobile app development",
+    "web design",
+    "e-commerce",
+    "web development",
+    "app development",
+    "ai integration",
+    "chatbot integration",
+    "seo",
+    "social media setup",
+    "digital marketing",
+    "custom softwares",
   ],
-  duration = 10,
+  duration = 15,
 } = defineProps<{
   list?: string[];
   duration?: number;
@@ -52,7 +58,7 @@ const {
   }
 
   li {
-    @apply uppercase px-8 whitespace-nowrap font-semibold bg-primary;
+    @apply uppercase px-8 whitespace-nowrap font-medium bg-primary;
   }
 }
 </style>
