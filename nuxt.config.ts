@@ -38,6 +38,23 @@ export default defineNuxtConfig({
           content: "yes",
         },
       ],
+      link: [
+        {
+          rel: "icon",
+          href: "/logo.svg",
+          type: "image/svg+xml",
+        },
+        {
+          rel: "apple-touch-icon",
+          href: "/logo.svg",
+          type: "image/svg+xml",
+        },
+        {
+          rel: "shortcut icon",
+          href: "/logo.svg",
+          type: "image/svg+xml",
+        },
+      ],
       title: "Proficio Software Solution",
     },
   },
