@@ -39,7 +39,7 @@ const data = [
       class="uppercase text-desc-gray text-xs font-semibold mt-8 sm:mt-24 mb-8"
     >
       <Icon name="tabler:minus" />
-      proficio softwsare solution
+      proficio software solution
     </p>
     <h1 class="grid text-4xl sm:text-8xl font-black">
       WE BUILD
