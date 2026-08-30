@@ -3,9 +3,17 @@ import works from "~/assets/data/work.json";
 </script>
 
 <template>
-  <AppHeader :position="2" title="Selected work" :trailing="'6 projects'" />
+  <AppHeader
+    id="work"
+    :position="2"
+    title="previous works"
+    :trailing="works.length + ' projects'"
+    class="mb-16"
+  />
 
-  <section class="grid items-start grid-cols-1 sm:grid-cols-3">
+  <section
+    class="grid items-start border-2 border-b-0 border-r-0 grid-cols-1 sm:grid-cols-3"
+  >
     <WorkCard
       v-for="(work, idx) in works"
       :key="work.id"

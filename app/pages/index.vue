@@ -5,7 +5,16 @@
     </MaxContainer>
     <InfiniteScroll />
     <MaxContainer class="py-16">
-      <Work />
+      <LazyWork />
+    </MaxContainer>
+    <MaxContainer class="py-16 bg-black">
+      <LazyHowWeWork />
+    </MaxContainer>
+    <MaxContainer class="py-16">
+      <LazyAboutUs />
+    </MaxContainer>
+    <MaxContainer class="py-16">
+      <LazyContact />
     </MaxContainer>
   </main>
 </template>

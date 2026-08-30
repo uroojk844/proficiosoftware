@@ -16,7 +16,7 @@ defineProps<{
 </script>
 
 <template>
-  <article class="grid content-start border p-4 h-full">
+  <article class="grid content-start border-b-2 border-r-2 p-4 h-full">
     <figure class="relative overflow-hidden mb-3">
       <img
         src="/work/tasqconsulting.png"
@@ -31,12 +31,24 @@ defineProps<{
       </small>
     </figure>
 
-    <p class="text-desc-gray text-sm font-semibold mb-1">
-      {{ work.company }}
-    </p>
-    <p class="font-semibold capitalize mb-1">
-      {{ work.title }}
-    </p>
+    <div class="flex justify-between items-center mb-1">
+      <div>
+        <p class="text-desc-gray text-sm font-semibold mb-1">
+          {{ work.company }}
+        </p>
+        <p class="font-semibold capitalize">
+          {{ work.title }}
+        </p>
+      </div>
+
+      <NuxtLink :href="work.link" target="_blank" class="link">
+        <AppButton
+          variant="icon"
+          class="hover:rotate-45"
+          icon-class="-rotate-45"
+        />
+      </NuxtLink>
+    </div>
     <p class="text-desc-gray text-sm mb-2 font-body">
       {{ work.description }}
     </p>

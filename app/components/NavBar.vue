@@ -1,18 +1,5 @@
 <script setup lang="ts">
-const links = [
-  {
-    label: "work",
-  },
-  {
-    label: "process",
-  },
-  {
-    label: "about",
-  },
-  {
-    label: "contact",
-  },
-];
+import { routes } from "~/routes";
 
 const isOpen = ref(false);
 function toggleNav() {
@@ -34,17 +21,13 @@ onMounted(() => {
 <template>
   <MaxContainer
     class="sticky top-0 z-50 border-l-8 border-l-primary"
-    v-bind="scrollY > scrollToggleLimit ? { border: 'b' } : {}"
     :class="{
-      'bg-white border-l-transparent': scrollY > scrollToggleLimit,
+      'bg-white border-l-white border-b-2': scrollY > scrollToggleLimit,
     }"
   >
     <nav class="group [[open]]:h-dvh" v-bind="isOpen ? { open: true } : {}">
       <div class="flex items-center justify-between">
-        <span class="font-semibold">
-          proficio
-          <span class="text-primary">_</span>
-        </span>
+        <TextLogo />
 
         <button class="md:hidden" @click="toggleNav">
           <Icon name="uil:bars" size="32" />
@@ -55,20 +38,23 @@ onMounted(() => {
         class="flex items-center max-md:flex-col max-md:items-start max-md:group-not-open:hidden"
       >
         <NuxtLink
-          v-for="link in links"
+          v-for="link in routes"
           :key="link.label"
-          class="flex items-center justify-between h-16 px-5 transition hover:bg-primary border-l border-light-gray"
+          :to="link.path"
+          class="link flex items-center justify-between h-16 px-5 transition hover:bg-primary hover:text-black border-l border-light-gray"
         >
           {{ link.label }}
         </NuxtLink>
       </div>
 
-      <AppButton
-        icon="uil:arrow-right"
-        class="max-md:group-not-open:hidden max-sm:mb-4"
-      >
-        start project
-      </AppButton>
+      <NuxtLink href="#contact">
+        <AppButton
+          icon="uil:arrow-right"
+          class="max-md:group-not-open:hidden max-sm:mb-4"
+        >
+          start project
+        </AppButton>
+      </NuxtLink>
     </nav>
   </MaxContainer>
 </template>

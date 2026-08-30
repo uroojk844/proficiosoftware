@@ -34,7 +34,7 @@ const data = [
 </script>
 
 <template>
-  <section class="flex flex-col landing pl-4 transition-all">
+  <section class="flex flex-col landing sm:pl-4 transition-all">
     <p
       class="uppercase text-desc-gray text-xs font-semibold mt-8 sm:mt-24 mb-8"
     >
@@ -59,7 +59,7 @@ const data = [
 
     <!-- STATS -->
     <div
-      class="flex max-lg:flex-col lg:items-end justify-between gap-8 border-t mt-12 xl:mt-24 py-5"
+      class="flex max-lg:flex-col lg:items-end justify-between gap-8 border-t-2 mt-12 xl:mt-24 py-5"
     >
       <p
         class="max-w-100 text-pretty font-body text-text-gray leading-[1.7] text-lg"

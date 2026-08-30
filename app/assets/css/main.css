@@ -1,9 +1,13 @@
 @import "tailwindcss";
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Space Mono", monospace;
-  letter-spacing: 1pxs;
-  scroll-behavior: smooth;
+  letter-spacing: 1px;
   scrollbar-gutter: stable;
 
   &::-webkit-scrollbar {
@@ -21,22 +25,39 @@ body {
 
 a {
   cursor: pointer;
+
+  &:focus {
+    outline-color: var(--color-primary);
+  }
+
+  &:not(.link):hover {
+    color: var(--color-primary);
+  }
 }
 
 @theme {
   --color-primary: #ffe600;
   --color-white-dim: #f2f2f2;
   --color-black: #0a0a0a;
+  --color-black-2: #1e1e1e;
 
   --color-light-gray: #e0e0e0;
   --color-text-gray: #555555;
   --color-desc-gray: #999999;
 }
 
+@utility text-2xs {
+  font-size: 10px;
+  line-height: 1.2;
+  vertical-align: middle;
+}
+
 @utility font-mono {
   font-family: "Space Mono", monospace;
+  letter-spacing: 1px;
 }
 
 @utility font-body {
   font-family: "Work Sans", system-ui, sans-serif;
+  letter-spacing: normal;
 }

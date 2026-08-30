@@ -5,21 +5,24 @@ const {
   iconClass = "",
 } = defineProps<{
   icon?: string;
-  variant?: "filled" | "outlined";
+  variant?: "filled" | "outlined" | "icon";
   iconClass?: string;
 }>();
 </script>
 
 <template>
   <button
-    class="cursor-pointer uppercase text-sm font-medium px-5 py-2.5 flex items-center gap-1 border border-black transition"
+    class="cursor-pointer uppercase text-sm font-medium py-2.5 flex items-center justify-center gap-1 border border-black transition outline-primary"
     :class="{
-      'bg-black hover:bg-primary text-primary hover:text-black':
+      'bg-black hover:bg-primary text-primary hover:text-black px-5':
         variant == 'filled',
-      'bg-white hover:bg-white-dim border': variant == 'outlined',
+      'bg-white hover:bg-white-dim border px-5': variant == 'outlined',
+      'hover:bg-primary min-w-9': variant == 'icon',
     }"
   >
-    <slot />
+    <span v-if="$slots.default">
+      <slot />
+    </span>
     <Icon v-if="icon" :name="icon" :class="iconClass" />
   </button>
 </template>
