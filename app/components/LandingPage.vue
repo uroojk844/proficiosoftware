@@ -28,7 +28,7 @@ const data = [
   },
   {
     value: "5yrs",
-    label: "exprerience",
+    label: "experience",
   },
 ];
 </script>
@@ -64,8 +64,7 @@ const data = [
       <p
         class="max-w-100 text-pretty font-body text-text-gray leading-[1.7] text-lg"
       >
-        Strategy-led digital experiences for founders, brands, and enterprises
-        ready to own their market online.
+      We build conversion-focused websites for startups and growing businesses in 6–8 weeks.
       </p>
 
       <ul class="flex gap-8">

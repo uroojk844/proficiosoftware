@@ -18,7 +18,7 @@ defineProps<{
 <template>
   <article class="group grid content-start border-b-2 border-r-2 p-4 h-full">
     <figure class="relative overflow-hidden mb-3">
-      <NuxtImg
+      <img
         :src="work.image"
         :alt="work.company"
         loading="lazy"
