@@ -82,7 +82,7 @@ const data = [
         <NuxtLink to="#contact">
           <AppButton>start project</AppButton>
         </NuxtLink>
-        <NuxtLink to="#work">
+        <NuxtLink to="#work" class="link">
           <AppButton variant="outlined" icon-class="rotate-90">
             view work
           </AppButton>

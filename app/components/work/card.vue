@@ -22,7 +22,7 @@ defineProps<{
         :src="work.image"
         :alt="work.company"
         loading="lazy"
-        class="transition duration-500 grayscale-100 group-hover:scale-105 group-hover:grayscale-0 aspect-video object-cover object-center w-full h-full"
+        class="transition duration-500 group-hover:scale-105 aspect-video object-cover object-center w-full h-full"
       />
 
       <small
