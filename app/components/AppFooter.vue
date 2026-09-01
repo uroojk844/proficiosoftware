@@ -60,7 +60,7 @@ const contacts = [
           </li>
         </ul>
 
-        <NuxtLink href="#contact">
+        <NuxtLink href="#contact" aria-label="start project">
           <AppButton class="bg-primary" icon-class="text-black">
             <span class="text-black">Start project</span>
           </AppButton>

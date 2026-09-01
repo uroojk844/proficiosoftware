@@ -58,7 +58,7 @@ watch(
         </NuxtLink>
       </div>
 
-      <NuxtLink href="#contact"  aria-label="start project">
+      <NuxtLink href="#contact" aria-label="start project">
         <AppButton
           icon="uil:arrow-right"
           class="max-md:group-not-open:hidden max-sm:mb-4"

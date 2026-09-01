@@ -79,10 +79,10 @@ const data = [
       </ul>
 
       <div class="shrink-0 flex gap-4">
-        <NuxtLink to="#contact">
+        <NuxtLink to="#contact" aria-label="start project">
           <AppButton>start project</AppButton>
         </NuxtLink>
-        <NuxtLink to="#work" class="link">
+        <NuxtLink to="#work" class="link" aria-label="view work">
           <AppButton variant="outlined" icon-class="rotate-90">
             view work
           </AppButton>
