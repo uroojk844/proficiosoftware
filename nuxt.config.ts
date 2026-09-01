@@ -16,7 +16,7 @@ export default defineNuxtConfig({
         lang: "en",
       },
 
-      title: "Proficio Software Solutions | Websites, Apps & Digital Products",
+      title: "Proficio Software Solution | Websites, Apps & Digital Products",
 
       meta: [
         {
@@ -40,28 +40,28 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Proficio Software Solutions is a digital studio building high-performing websites, web apps, e-commerce platforms and custom software for ambitious brands and businesses.",
+            "Proficio Software Solution is a digital studio building high-performing websites, web apps, e-commerce platforms and custom software for ambitious brands and businesses.",
         },
 
         {
           name: "keywords",
           content:
-            "web development, website design, web apps, software development, e-commerce development, Nuxt development, React development, Flutter development, AI integration, SEO, digital agency, Proficio Software Solutions",
+            "web development, website design, web apps, software development, e-commerce development, Nuxt development, React development, Flutter development, AI integration, SEO, digital agency, Proficio Software Solution",
         },
 
         {
           name: "author",
-          content: "Proficio Software Solutions",
+          content: "Proficio Software Solution",
         },
 
         {
           name: "creator",
-          content: "Proficio Software Solutions",
+          content: "Proficio Software Solution",
         },
 
         {
           name: "application-name",
-          content: "Proficio Software Solutions",
+          content: "Proficio Software Solution",
         },
 
         {
@@ -98,13 +98,13 @@ export default defineNuxtConfig({
 
         {
           property: "og:site_name",
-          content: "Proficio Software Solutions",
+          content: "Proficio Software Solution",
         },
 
         {
           property: "og:title",
           content:
-            "Proficio Software Solutions | Websites, Apps & Digital Products",
+            "Proficio Software Solution | Websites, Apps & Digital Products",
         },
 
         {
@@ -135,7 +135,7 @@ export default defineNuxtConfig({
 
         {
           property: "og:image:alt",
-          content: "Proficio Software Solutions",
+          content: "Proficio Software Solution",
         },
 
         {
@@ -152,7 +152,7 @@ export default defineNuxtConfig({
         {
           name: "twitter:title",
           content:
-            "Proficio Software Solutions | Websites, Apps & Digital Products",
+            "Proficio Software Solution | Websites, Apps & Digital Products",
         },
 
         {
@@ -168,7 +168,7 @@ export default defineNuxtConfig({
 
         {
           name: "twitter:image:alt",
-          content: "Proficio Software Solutions",
+          content: "Proficio Software Solution",
         },
       ],
 
@@ -214,7 +214,7 @@ export default defineNuxtConfig({
               {
                 "@type": "Organization",
                 "@id": "https://proficiosoftware.in/#organization",
-                name: "Proficio Software Solutions",
+                name: "Proficio Software Solution",
                 url: "https://proficiosoftware.in/",
                 logo: "https://proficiosoftware.in/logo.svg",
                 description:
@@ -226,7 +226,7 @@ export default defineNuxtConfig({
                 "@type": "WebSite",
                 "@id": "https://proficiosoftware.in/#website",
                 url: "https://proficiosoftware.in/",
-                name: "Proficio Software Solutions",
+                name: "Proficio Software Solution",
                 publisher: {
                   "@id": "https://proficiosoftware.in/#organization",
                 },
