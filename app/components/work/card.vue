@@ -52,6 +52,7 @@ defineProps<{
           variant="icon"
           class="group-hover:rotate-45"
           icon-class="-rotate-45"
+          :aria-label="'open webiste ' + work.company"
         />
       </NuxtLink>
     </div>

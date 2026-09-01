@@ -36,7 +36,11 @@ watch(
       <div class="flex items-center justify-between">
         <TextLogo />
 
-        <button class="md:hidden" @click="toggleNav">
+        <button
+          class="md:hidden"
+          :aria-label="isOpen ? 'close nav' : 'open nav'"
+          @click="toggleNav"
+        >
           <Icon name="uil:bars" size="32" />
         </button>
       </div>
@@ -54,7 +58,7 @@ watch(
         </NuxtLink>
       </div>
 
-      <NuxtLink href="#contact">
+      <NuxtLink href="#contact"  aria-label="start project">
         <AppButton
           icon="uil:arrow-right"
           class="max-md:group-not-open:hidden max-sm:mb-4"

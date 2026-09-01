@@ -28,18 +28,21 @@ const contacts = [
         </p>
       </section>
       <section class="uppercase border-x border-black-2 p-8">
-        <h5 class="mb-4 font-semibold text-sm">navigation</h5>
+        <h5 class="mb-2 font-semibold text-sm">navigation</h5>
 
-        <ul class="grid">
-          <NuxtLink v-for="route in routes" :key="route.label" :to="route.path">
-            <li class="py-3 border-b border-black-2 bod font-semibold text-xs">
+        <ul>
+          <li v-for="route in routes" :key="route.label" class="grid">
+            <NuxtLink
+              :to="route.path"
+              class="py-3 border-b border-black-2 bod font-semibold text-xs"
+            >
               {{ route.label }}
-            </li>
-          </NuxtLink>
+            </NuxtLink>
+          </li>
         </ul>
       </section>
       <section class="uppercase border-x border-black-2 p-8">
-        <h5 class="mb-4 font-semibold text-sm">contact</h5>
+        <h5 class="mb-5 font-semibold text-sm">contact</h5>
 
         <ul class="grid mb-4">
           <li
