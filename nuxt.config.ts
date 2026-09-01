@@ -20,6 +20,10 @@ export default defineNuxtConfig({
 
       meta: [
         {
+          name: "google-site-verification",
+          content: "qOXMU45wOtB2oDQni1Wl9usigzH_PaihYQFcLHk3hgg",
+        },
+        {
           charset: "utf-8",
         },
 
