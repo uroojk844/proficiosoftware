@@ -40,15 +40,14 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Proficio Software Solutions is a digital studio building high-performing websites, web apps, e-commerce platforms and custom software for ambitious brands and businesses.",
+            "Proficio Software Solutions is a software development agency specializing in custom software, web applications, mobile apps, e-commerce, AI integration and ERP solutions.",
         },
 
         {
           name: "keywords",
           content:
-            "web development, website design, web apps, software development, e-commerce development, Nuxt development, React development, Flutter development, AI integration, SEO, digital agency, Proficio Software Solutions",
+            "web development agency, software development agency, software development company, custom software development, custom software development company, web development company, website development company, web application development, web app development company, full stack development company, digital product development, software development services, web development services, custom web development, e-commerce development company, mobile app development company, Flutter app development, React development company, Nuxt development company, AI software development, AI integration services, chatbot integration service, UI UX design agency, startup web development, website redesign service, offshore web development, outsource web development, affordable software development, professional software development, digital agency, web design agency, app development company, Proficio Software Solutions, Proficio Software",
         },
-
         {
           name: "author",
           content: "Proficio Software Solutions",
