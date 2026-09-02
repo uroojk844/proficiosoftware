@@ -10,6 +10,10 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  gtag: {
+    id: "G-LTD90TR5QZ",
+  },
+
   app: {
     head: {
       htmlAttrs: {
@@ -237,5 +241,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon"],
+  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "nuxt-gtag"],
 });
