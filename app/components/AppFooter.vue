@@ -20,7 +20,7 @@ const contacts = [
           <img src="/logo.svg" alt="logo" />
           <div class="uppercase grid">
             <TextLogo class="text-white text-xs" />
-            <span class="text-text-gray text-xs">software solution</span>
+            <span class="text-text-gray text-xs">software solutions</span>
           </div>
         </div>
         <p class="text-sm font-body">
