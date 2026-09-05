@@ -18,13 +18,15 @@ defineProps<{
 </script>
 
 <template>
-  <article class="group grid content-start border-b-2 border-r-2 p-4 h-full">
-    <figure class="relative overflow-hidden mb-3">
+  <article
+    class="group grid content-start border-b-2 border-r-2 p-4 h-full work-card"
+  >
+    <figure class="relative overflow-hidden mb-3 work-card-image">
       <img
         :src="work.image"
         :alt="work.company"
         loading="lazy"
-        class="transition duration-500 group-hover:scale-105 aspect-video object-cover object-center w-full h-full"
+        class="transition-all duration-500 group-hover:scale-105 aspect-video object-cover object-center w-full h-full"
       />
 
       <small
@@ -73,3 +75,22 @@ defineProps<{
     </ul>
   </article>
 </template>
+
+<style scoped>
+.work-card-image {
+  animation-name: zoom;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  animation-fill-mode: both;
+}
+
+@keyframes zoom {
+  from {
+    transform: translateY(400px) scale(0.75);
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+</style>

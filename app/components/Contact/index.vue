@@ -104,7 +104,7 @@ async function handleSubmit(event: SubmitEvent) {
     class="mb-16"
   />
 
-  <section class="grid sm:grid-cols-[min-content_1fr] border-2">
+  <section class="grid sm:grid-cols-[min-content_1fr] border-2 slideup">
     <div class="bg-black px-6 sm:px-12 py-8 sm:py-16">
       <p class="text-white text-4xl font-bold mb-8">
         {{ t("contact.heroLine1") }}
@@ -186,3 +186,22 @@ async function handleSubmit(event: SubmitEvent) {
     </form>
   </section>
 </template>
+
+<style scoped>
+.slideup {
+  animation-name: zoom;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  animation-fill-mode: both;
+}
+
+@keyframes zoom {
+  from {
+    transform: translateY(400px) scale(0.75);
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+</style>

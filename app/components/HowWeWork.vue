@@ -22,7 +22,7 @@ const strategies = computed(() =>
     <li
       v-for="(st, idx) in strategies"
       :key="idx"
-      class="grid sm:grid-cols-[20ch_32ch_auto] items-center border-t border-text-gray last:border-b max-sm:gap-4 max-sm:py-8"
+      class="work-item grid sm:grid-cols-[20ch_32ch_auto] items-center border-t border-text-gray last:border-b max-sm:gap-4 max-sm:py-8"
     >
       <span class="text-primary text-7xl font-bold">
         {{ String(idx + 1).padStart(2, "0") }}
@@ -38,3 +38,22 @@ const strategies = computed(() =>
     </li>
   </ul>
 </template>
+
+<style scoped>
+.work-item {
+  animation-name: slide;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  animation-fill-mode: both;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(400px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+</style>

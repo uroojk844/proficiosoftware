@@ -42,7 +42,7 @@ const milestones = computed(() => [
     class="mb-16"
   />
 
-  <section class="grid sm:grid-cols-2">
+  <section class="grid sm:grid-cols-2 slideup">
     <article
       class="p-6 sm:p-12 grid gap-4 border-2 sm:border-r-0 max-sm:border-b-0"
     >
@@ -88,3 +88,22 @@ const milestones = computed(() => [
     </article>
   </section>
 </template>
+
+<style scoped>
+.slideup {
+  animation-name: zoom;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+  animation-fill-mode: both;
+}
+
+@keyframes zoom {
+  from {
+    transform: translateY(400px) scale(0.75);
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
+</style>
