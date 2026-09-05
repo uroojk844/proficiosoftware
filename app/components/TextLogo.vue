@@ -11,7 +11,7 @@ const { showLogo = true } = defineProps<{
   >
     <img v-if="showLogo" src="/logo.svg" class="w-6" />
     proficio
-    <span class="text-primary cursor">_</span>
+    <span class="text-primary cursor opacity-0">_</span>
   </NuxtLink>
 </template>
 
@@ -19,15 +19,17 @@ const { showLogo = true } = defineProps<{
 @reference "~/assets/css/main.css";
 
 .cursor {
-  animation: insert 1s linear infinite;
+  animation: blink 1s ease-in-out infinite;
 }
 
-@keyframes insert {
-  0% {
-    opacity: 0;
-  }
-  100% {
+@keyframes blink {
+  0%,
+  50% {
     opacity: 1;
+  }
+
+  51% {
+    opacity: 0;
   }
 }
 </style>
