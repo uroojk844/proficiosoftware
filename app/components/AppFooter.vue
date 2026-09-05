@@ -20,6 +20,29 @@ const contacts = [
     value: "mailto:uroojk844@gmail.com",
   },
 ];
+
+const social = [
+  {
+    id: 1,
+    icon: "ri:facebook-circle-fill",
+    link: "https://www.facebook.com/proficiosoftwaresolutions",
+  },
+  {
+    id: 2,
+    icon: "uil:instagram",
+    link: "https://www.instagram.com/proficio_software_solutions",
+  },
+  {
+    id: 3,
+    icon: "uil:linkedin",
+    link: "https://www.linkedin.com/company/proficio-software-solutions",
+  },
+  {
+    id: 4,
+    icon: "ri:twitter-x-line",
+    link: "https://x.com/_proficio_",
+  },
+];
 </script>
 
 <template>
@@ -27,9 +50,27 @@ const contacts = [
     <footer class="grid sm:grid-cols-3 text-text-gray border border-black-2">
       <section class="p-8">
         <TextLogo class="mb-3 [&_.logo]:text-primary" />
+
         <p class="text-sm font-body">
           {{ t("footer.tagline") }}
         </p>
+
+        <hr class="border-black-2 my-6" />
+
+        <div class="flex items-center gap-8">
+          <NuxtLink
+            v-for="link in social"
+            :key="link.id"
+            :to="link.link"
+            target="_blank"
+          >
+            <Icon
+              :name="link.icon"
+              :size="24"
+              class="text-text-gray hover:text-desc-gray"
+            />
+          </NuxtLink>
+        </div>
       </section>
       <section class="uppercase border-x border-black-2 p-8">
         <h3 class="mb-2 font-semibold text-sm">{{ t("footer.navigation") }}</h3>
