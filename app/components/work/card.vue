@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const { t } = useLocale();
+
 interface IWorkCard {
   id: number;
   company: string;
@@ -46,13 +48,13 @@ defineProps<{
         :href="work.link"
         target="_blank"
         class="link"
-        title="visit website"
+        :title="t('work.visitWebsite')"
       >
         <AppButton
           variant="icon"
           class="group-hover:rotate-45"
           icon-class="-rotate-45"
-          :aria-label="'open webiste ' + work.company"
+          :aria-label="t('work.openWebsite') + ' ' + work.company"
         />
       </NuxtLink>
     </div>

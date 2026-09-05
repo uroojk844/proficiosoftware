@@ -23,6 +23,11 @@ body {
   }
 }
 
+html[lang="ar"] .font-body{
+  font-family: "Alyamama", serif;
+  letter-spacing: 2px;
+}
+
 a {
   cursor: pointer;
 
@@ -60,4 +65,9 @@ a {
 @utility font-body {
   font-family: "Work Sans", system-ui, sans-serif;
   letter-spacing: normal;
+}
+
+@utility ltr {
+  direction: ltr;
+  unicode-bidi: isolate;
 }

@@ -21,10 +21,12 @@ const {
   list?: string[];
   duration?: number;
 }>();
+
+const { isArabic } = useLocale();
 </script>
 
 <template>
-  <div class="marquee">
+  <div class="marquee" :class="{ ar: isArabic }">
     <ul
       v-for="idx in 2"
       :key="idx"
@@ -49,12 +51,25 @@ const {
   }
 }
 
+@keyframes scroll-lr {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(50%);
+  }
+}
+
 .marquee {
   @apply overflow-hidden flex;
 
   ul {
     animation: scroll v-bind(duration + "s") linear infinite;
     @apply bg-black flex w-max gap-px p-px;
+  }
+
+  &.ar ul {
+    animation-name: scroll-lr;
   }
 
   li {

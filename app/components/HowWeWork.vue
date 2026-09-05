@@ -1,12 +1,19 @@
 <script setup lang="ts">
-import strategies from "~/assets/data/work-strategy.json";
+import strategiesEn from "~/assets/data/work-strategy.en.json";
+import strategiesAr from "~/assets/data/work-strategy.ar.json";
+
+const { t, locale } = useLocale();
+
+const strategies = computed(() =>
+  locale.value === "ar" ? strategiesAr : strategiesEn,
+);
 </script>
 
 <template>
   <AppHeader
     id="process"
     :position="3"
-    title="how we work"
+    :title="t('process.title')"
     title-class="text-white"
     class="border-text-gray border-none"
   />

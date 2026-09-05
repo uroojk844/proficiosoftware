@@ -1,0 +1,18 @@
+[
+  {
+    "title": "DISCOVERY & STRATEGY",
+    "description": "We start with why. Deep-dive workshops to understand your business, users, and what success looks like. No assumptions, no templates."
+  },
+  {
+    "title": "DESIGN & PROTOTYPING",
+    "description": "High-fidelity prototypes before a single line of production code. Iterate fast, validate early, and align stakeholders visually."
+  },
+  {
+    "title": "ENGINEERING & BUILD",
+    "description": "Performance-first development using modern React, Next.js, and headless architecture. Built to scale from day one."
+  },
+  {
+    "title": "LAUNCH & GROWTH",
+    "description": "We don't disappear at launch. Monitoring, analytics, iteration, and ongoing support to compound your results over time."
+  }
+]
