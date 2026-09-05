@@ -41,7 +41,10 @@ watch(
       'bg-white border-l-white border-b-2': scrollY > scrollToggleLimit,
     }"
   >
-    <nav class="group [[open]]:h-dvh" v-bind="isOpen ? { open: true } : {}">
+    <nav
+      class="group [[open]]:h-dvh relative"
+      v-bind="isOpen ? { open: true } : {}"
+    >
       <div class="flex items-center justify-between gap-3">
         <TextLogo />
 
@@ -67,7 +70,7 @@ watch(
       </div>
 
       <div
-        class="flex items-center max-md:flex-col max-md:items-start max-md:group-not-open:hidden"
+        class="flex items-center max-md:flex-col max-md:items-start max-md:group-not-open:hidden xl:absolute left-1/2 xl:-translate-x-1/2"
       >
         <NuxtLink
           v-for="link in navRoutes"
