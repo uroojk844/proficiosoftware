@@ -4,7 +4,15 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", "lenis/dist/lenis.css"],
+
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/fonts",
+    "@nuxt/icon",
+    "nuxt-gtag",
+    "lenis/nuxt",
+  ],
 
   vite: {
     plugins: [tailwindcss()],
@@ -240,6 +248,4 @@ export default defineNuxtConfig({
       ],
     },
   },
-
-  modules: ["@nuxt/eslint", "@nuxt/fonts", "@nuxt/icon", "nuxt-gtag"],
 });
