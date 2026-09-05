@@ -45,7 +45,7 @@ const { isArabic } = useLocale();
 <template>
   <section class="flex flex-col landing sm:pl-4 transition-all">
     <p
-      class="uppercase text-desc-gray text-lg font-semibold mt-8 sm:mt-24 mb-8 flex items-center gap-2"
+      class="uppercase text-desc-gray text-xs font-semibold mt-8 sm:mt-24 mb-8 flex items-center gap-2"
     >
       {{ t("hero.prefix") }}
     </p>

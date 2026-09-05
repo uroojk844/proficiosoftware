@@ -1,18 +1,22 @@
 <script setup lang="ts">
-const { showLogo = true } = defineProps<{
-  showLogo?: boolean;
-}>();
+const router = useRouter();
+function scrollToTop() {
+  window.scrollTo(0, 0);
+  router.push("/");
+}
 </script>
 
 <template>
-  <NuxtLink
-    to="/"
-    class="flex items-center gap-2 font-semibold logo uppercase text-xl"
-  >
-    <img v-if="showLogo" src="/logo.svg" class="w-6" />
-    proficio
-    <span class="text-primary cursor opacity-0">_</span>
-  </NuxtLink>
+  <div class="flex items-center gap-2 text-xs cursor-pointer" @click="scrollToTop">
+    <img src="/logo.svg" alt="logo" class="w-7" />
+    <div class="uppercase grid">
+      <div class="flex items-center gap-2 font-semibold logo uppercase">
+        proficio
+        <span class="text-primary cursor opacity-0">_</span>
+      </div>
+      <span class="text-text-gray line-clamp-1">software solutions</span>
+    </div>
+  </div>
 </template>
 
 <style lang="css">

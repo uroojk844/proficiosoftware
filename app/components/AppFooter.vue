@@ -26,13 +26,7 @@ const contacts = [
   <MaxContainer class="bg-black py-8">
     <footer class="grid sm:grid-cols-3 text-text-gray border border-black-2">
       <section class="p-8">
-        <div class="flex items-center gap-4 mb-4">
-          <img src="/logo.svg" alt="logo" />
-          <div class="uppercase grid">
-            <TextLogo class="text-white text-xs" :show-logo="false" />
-            <span class="text-text-gray text-xs">software solutions</span>
-          </div>
-        </div>
+        <TextLogo class="mb-3 [&_.logo]:text-primary" />
         <p class="text-sm font-body">
           {{ t("footer.tagline") }}
         </p>
