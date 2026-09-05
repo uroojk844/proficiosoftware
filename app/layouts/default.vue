@@ -5,6 +5,9 @@ const lenisOptions = {
   duration: 1.2,
   smoothWheel: true,
   autoRaf: true,
+  anchors: true,
+  syncTouch: true,
+  touchMultiplier: 1,
 };
 </script>
 
